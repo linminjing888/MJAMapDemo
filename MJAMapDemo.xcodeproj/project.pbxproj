@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04F73E73F677323911D72754 /* libPods-MJAMapDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F88E98B04DB82FF5704346 /* libPods-MJAMapDemo.a */; };
 		AECF82362019B915001C0D97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF82352019B915001C0D97 /* AppDelegate.m */; };
 		AECF82392019B915001C0D97 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF82382019B915001C0D97 /* ViewController.m */; };
 		AECF823C2019B915001C0D97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECF823A2019B915001C0D97 /* Main.storyboard */; };
 		AECF823E2019B915001C0D97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECF823D2019B915001C0D97 /* Assets.xcassets */; };
 		AECF82412019B915001C0D97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECF823F2019B915001C0D97 /* LaunchScreen.storyboard */; };
 		AECF82442019B915001C0D97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF82432019B915001C0D97 /* main.m */; };
+		AECF824D2019BAF0001C0D97 /* MJMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF824C2019BAF0001C0D97 /* MJMapViewController.m */; };
+		AECF82502019BB03001C0D97 /* MJPoiResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF824F2019BB03001C0D97 /* MJPoiResultViewController.m */; };
+		AECF82572019BB4B001C0D97 /* MJPoiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF82552019BB4B001C0D97 /* MJPoiTableViewCell.m */; };
+		AECF82582019BB4B001C0D97 /* MJPoiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AECF82562019BB4B001C0D97 /* MJPoiTableViewCell.xib */; };
+		AECF825D2019BC13001C0D97 /* MBProgressHUD+JDragon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AECF825A2019BC13001C0D97 /* MBProgressHUD+JDragon.bundle */; };
+		AECF825E2019BC13001C0D97 /* MBProgressHUD+JDragon.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF825B2019BC13001C0D97 /* MBProgressHUD+JDragon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		92F88E98B04DB82FF5704346 /* libPods-MJAMapDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MJAMapDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB57E69100B8857759FEF350 /* Pods-MJAMapDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJAMapDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MJAMapDemo/Pods-MJAMapDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AECF82312019B915001C0D97 /* MJAMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJAMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECF82342019B915001C0D97 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AECF82352019B915001C0D97 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +35,18 @@
 		AECF82402019B915001C0D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AECF82422019B915001C0D97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AECF82432019B915001C0D97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AECF824B2019BAF0001C0D97 /* MJMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJMapViewController.h; sourceTree = "<group>"; };
+		AECF824C2019BAF0001C0D97 /* MJMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJMapViewController.m; sourceTree = "<group>"; };
+		AECF824E2019BB03001C0D97 /* MJPoiResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJPoiResultViewController.h; sourceTree = "<group>"; };
+		AECF824F2019BB03001C0D97 /* MJPoiResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJPoiResultViewController.m; sourceTree = "<group>"; };
+		AECF82542019BB4B001C0D97 /* MJPoiTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJPoiTableViewCell.h; sourceTree = "<group>"; };
+		AECF82552019BB4B001C0D97 /* MJPoiTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJPoiTableViewCell.m; sourceTree = "<group>"; };
+		AECF82562019BB4B001C0D97 /* MJPoiTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MJPoiTableViewCell.xib; sourceTree = "<group>"; };
+		AECF825A2019BC13001C0D97 /* MBProgressHUD+JDragon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "MBProgressHUD+JDragon.bundle"; sourceTree = "<group>"; };
+		AECF825B2019BC13001C0D97 /* MBProgressHUD+JDragon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+JDragon.m"; sourceTree = "<group>"; };
+		AECF825C2019BC13001C0D97 /* MBProgressHUD+JDragon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+JDragon.h"; sourceTree = "<group>"; };
+		AECF825F2019BD38001C0D97 /* MJMapHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJMapHeader.h; sourceTree = "<group>"; };
+		E4DC7B6DCB990E514B0971FD /* Pods-MJAMapDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJAMapDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MJAMapDemo/Pods-MJAMapDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +54,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F73E73F677323911D72754 /* libPods-MJAMapDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		257E95ACE51F824814B0B643 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92F88E98B04DB82FF5704346 /* libPods-MJAMapDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		419CA1A63B59D172D5F2D36C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB57E69100B8857759FEF350 /* Pods-MJAMapDemo.debug.xcconfig */,
+				E4DC7B6DCB990E514B0971FD /* Pods-MJAMapDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AECF82282019B915001C0D97 = {
 			isa = PBXGroup;
 			children = (
 				AECF82332019B915001C0D97 /* MJAMapDemo */,
 				AECF82322019B915001C0D97 /* Products */,
+				419CA1A63B59D172D5F2D36C /* Pods */,
+				257E95ACE51F824814B0B643 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +103,8 @@
 				AECF82352019B915001C0D97 /* AppDelegate.m */,
 				AECF82372019B915001C0D97 /* ViewController.h */,
 				AECF82382019B915001C0D97 /* ViewController.m */,
+				AECF824A2019BACB001C0D97 /* MJAmapLocation */,
+				AECF82592019BC0C001C0D97 /* MBProgress */,
 				AECF823A2019B915001C0D97 /* Main.storyboard */,
 				AECF823D2019B915001C0D97 /* Assets.xcassets */,
 				AECF823F2019B915001C0D97 /* LaunchScreen.storyboard */,
@@ -71,6 +114,31 @@
 			path = MJAMapDemo;
 			sourceTree = "<group>";
 		};
+		AECF824A2019BACB001C0D97 /* MJAmapLocation */ = {
+			isa = PBXGroup;
+			children = (
+				AECF824B2019BAF0001C0D97 /* MJMapViewController.h */,
+				AECF824C2019BAF0001C0D97 /* MJMapViewController.m */,
+				AECF824E2019BB03001C0D97 /* MJPoiResultViewController.h */,
+				AECF824F2019BB03001C0D97 /* MJPoiResultViewController.m */,
+				AECF82542019BB4B001C0D97 /* MJPoiTableViewCell.h */,
+				AECF82552019BB4B001C0D97 /* MJPoiTableViewCell.m */,
+				AECF82562019BB4B001C0D97 /* MJPoiTableViewCell.xib */,
+				AECF825F2019BD38001C0D97 /* MJMapHeader.h */,
+			);
+			path = MJAmapLocation;
+			sourceTree = "<group>";
+		};
+		AECF82592019BC0C001C0D97 /* MBProgress */ = {
+			isa = PBXGroup;
+			children = (
+				AECF825A2019BC13001C0D97 /* MBProgressHUD+JDragon.bundle */,
+				AECF825C2019BC13001C0D97 /* MBProgressHUD+JDragon.h */,
+				AECF825B2019BC13001C0D97 /* MBProgressHUD+JDragon.m */,
+			);
+			path = MBProgress;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AECF82472019B915001C0D97 /* Build configuration list for PBXNativeTarget "MJAMapDemo" */;
 			buildPhases = (
+				C38C01BD8E72BB67DDBDDD19 /* [CP] Check Pods Manifest.lock */,
 				AECF822D2019B915001C0D97 /* Sources */,
 				AECF822E2019B915001C0D97 /* Frameworks */,
 				AECF822F2019B915001C0D97 /* Resources */,
+				25C529CDEF790B80A27077C7 /* [CP] Embed Pods Frameworks */,
+				4EFC83243749BAFB5436D9E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,20 +201,80 @@
 			buildActionMask = 2147483647;
 			files = (
 				AECF82412019B915001C0D97 /* LaunchScreen.storyboard in Resources */,
+				AECF82582019BB4B001C0D97 /* MJPoiTableViewCell.xib in Resources */,
 				AECF823E2019B915001C0D97 /* Assets.xcassets in Resources */,
 				AECF823C2019B915001C0D97 /* Main.storyboard in Resources */,
+				AECF825D2019BC13001C0D97 /* MBProgressHUD+JDragon.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25C529CDEF790B80A27077C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MJAMapDemo/Pods-MJAMapDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EFC83243749BAFB5436D9E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MJAMapDemo/Pods-MJAMapDemo-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MJAMapDemo/Pods-MJAMapDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38C01BD8E72BB67DDBDDD19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MJAMapDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AECF822D2019B915001C0D97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECF824D2019BAF0001C0D97 /* MJMapViewController.m in Sources */,
+				AECF82572019BB4B001C0D97 /* MJPoiTableViewCell.m in Sources */,
 				AECF82392019B915001C0D97 /* ViewController.m in Sources */,
+				AECF825E2019BC13001C0D97 /* MBProgressHUD+JDragon.m in Sources */,
 				AECF82442019B915001C0D97 /* main.m in Sources */,
+				AECF82502019BB03001C0D97 /* MJPoiResultViewController.m in Sources */,
 				AECF82362019B915001C0D97 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,13 +407,15 @@
 		};
 		AECF82482019B915001C0D97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB57E69100B8857759FEF350 /* Pods-MJAMapDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2538H4P3P;
 				INFOPLIST_FILE = MJAMapDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.MJAMapDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xianguoyihao.freshone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -290,13 +423,15 @@
 		};
 		AECF82492019B915001C0D97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4DC7B6DCB990E514B0971FD /* Pods-MJAMapDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2538H4P3P;
 				INFOPLIST_FILE = MJAMapDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.MJAMapDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xianguoyihao.freshone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

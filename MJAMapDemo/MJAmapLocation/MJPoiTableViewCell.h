@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#define POITableViewCellIdentifier      @"POITableViewCellIdentifier"
 
 @interface MJPoiTableViewCell : UITableViewCell
+
+@property (nonatomic, weak) IBOutlet UILabel *nameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *infoLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *selectedImageView;
+
 
 @end

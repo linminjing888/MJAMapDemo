@@ -10,4 +10,7 @@
 
 @interface MJMapViewController : UIViewController
 
+///纬度（垂直方向）、经度（水平方向）
+@property (nonatomic,copy) void(^selectPoiBlock)(NSString * address, CGFloat latitude,CGFloat longitude);
+
 @end

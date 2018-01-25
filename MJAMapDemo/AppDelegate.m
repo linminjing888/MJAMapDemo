@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import <AMapFoundationKit/AMapFoundationKit.h>
+//--高德地图
+#define AMapAppKey @"dd56a9edac69522b551e536e7a84c12a"
 
 @interface AppDelegate ()
 
@@ -16,7 +20,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    /// 高德定位
+    [AMapServices sharedServices].apiKey = AMapAppKey ;
+    
+    ViewController * VC =[[ViewController alloc]init];
+    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:VC];
+    self.window.rootViewController = nav;
+    
+    [self.window makeKeyWindow];
+    
     return YES;
 }
 

@@ -12,6 +12,9 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    
+    self.selectedImageView.hidden = YES;
+    
     // Initialization code
 }
 
