@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04F73E73F677323911D72754 /* libPods-MJAMapDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F88E98B04DB82FF5704346 /* libPods-MJAMapDemo.a */; };
+		AE9A18A7201B251700EE5F25 /* MJDiDiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A18A6201B251700EE5F25 /* MJDiDiViewController.m */; };
 		AECF82362019B915001C0D97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF82352019B915001C0D97 /* AppDelegate.m */; };
 		AECF82392019B915001C0D97 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF82382019B915001C0D97 /* ViewController.m */; };
 		AECF823C2019B915001C0D97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECF823A2019B915001C0D97 /* Main.storyboard */; };
@@ -20,11 +21,14 @@
 		AECF82582019BB4B001C0D97 /* MJPoiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AECF82562019BB4B001C0D97 /* MJPoiTableViewCell.xib */; };
 		AECF825D2019BC13001C0D97 /* MBProgressHUD+JDragon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AECF825A2019BC13001C0D97 /* MBProgressHUD+JDragon.bundle */; };
 		AECF825E2019BC13001C0D97 /* MBProgressHUD+JDragon.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF825B2019BC13001C0D97 /* MBProgressHUD+JDragon.m */; };
+		AEE308982023186E0020778B /* MJPulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE308972023186E0020778B /* MJPulsingHaloLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		92F88E98B04DB82FF5704346 /* libPods-MJAMapDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MJAMapDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB57E69100B8857759FEF350 /* Pods-MJAMapDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJAMapDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MJAMapDemo/Pods-MJAMapDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AE9A18A5201B251700EE5F25 /* MJDiDiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJDiDiViewController.h; sourceTree = "<group>"; };
+		AE9A18A6201B251700EE5F25 /* MJDiDiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJDiDiViewController.m; sourceTree = "<group>"; };
 		AECF82312019B915001C0D97 /* MJAMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJAMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECF82342019B915001C0D97 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AECF82352019B915001C0D97 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,6 +50,8 @@
 		AECF825B2019BC13001C0D97 /* MBProgressHUD+JDragon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+JDragon.m"; sourceTree = "<group>"; };
 		AECF825C2019BC13001C0D97 /* MBProgressHUD+JDragon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+JDragon.h"; sourceTree = "<group>"; };
 		AECF825F2019BD38001C0D97 /* MJMapHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJMapHeader.h; sourceTree = "<group>"; };
+		AEE30896202318600020778B /* MJPulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPulsingHaloLayer.h; sourceTree = "<group>"; };
+		AEE308972023186E0020778B /* MJPulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPulsingHaloLayer.m; sourceTree = "<group>"; };
 		E4DC7B6DCB990E514B0971FD /* Pods-MJAMapDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJAMapDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MJAMapDemo/Pods-MJAMapDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +131,10 @@
 				AECF82552019BB4B001C0D97 /* MJPoiTableViewCell.m */,
 				AECF82562019BB4B001C0D97 /* MJPoiTableViewCell.xib */,
 				AECF825F2019BD38001C0D97 /* MJMapHeader.h */,
+				AE9A18A5201B251700EE5F25 /* MJDiDiViewController.h */,
+				AE9A18A6201B251700EE5F25 /* MJDiDiViewController.m */,
+				AEE30896202318600020778B /* MJPulsingHaloLayer.h */,
+				AEE308972023186E0020778B /* MJPulsingHaloLayer.m */,
 			);
 			path = MJAmapLocation;
 			sourceTree = "<group>";
@@ -270,6 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AECF824D2019BAF0001C0D97 /* MJMapViewController.m in Sources */,
+				AE9A18A7201B251700EE5F25 /* MJDiDiViewController.m in Sources */,
+				AEE308982023186E0020778B /* MJPulsingHaloLayer.m in Sources */,
 				AECF82572019BB4B001C0D97 /* MJPoiTableViewCell.m in Sources */,
 				AECF82392019B915001C0D97 /* ViewController.m in Sources */,
 				AECF825E2019BC13001C0D97 /* MBProgressHUD+JDragon.m in Sources */,
