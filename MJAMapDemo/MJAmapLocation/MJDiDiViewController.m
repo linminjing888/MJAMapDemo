@@ -174,6 +174,7 @@
                          [self.centerAnnotationView setCenter:center];}
                      completion:nil];
 }
+// 脉冲波外扩动画
 -(void)addGroupAnimation{
     
     if (self.animationLayer) {
@@ -194,7 +195,7 @@
     CAMediaTimingFunction * defaultCurve = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
     CAAnimationGroup * animationGroup = [CAAnimationGroup animation];
     animationGroup.duration = 2;
-    animationGroup.repeatCount = 1;//重复无限次  INFINITY
+    animationGroup.repeatCount = 1;  //重复无限次  INFINITY
     animationGroup.removedOnCompletion = NO;
     animationGroup.delegate  = self;
     // 速度控制函数
@@ -221,6 +222,17 @@
     [self.centerAnnotationView.layer insertSublayer:self.animationLayer below:self.centerAnnotationView.layer];//把扩散层放到头像按钮下面
 }
 
+/* 根据中心点坐标来请求逆地理编码 */
+- (void)searchReGeocodeWithCoordinate:(CLLocationCoordinate2D)coordinate
+{
+    AMapReGeocodeSearchRequest *regeo = [[AMapReGeocodeSearchRequest alloc] init];
+    
+    regeo.location = [AMapGeoPoint locationWithLatitude:coordinate.latitude longitude:coordinate.longitude];
+    regeo.requireExtension = YES;
+    
+    [self.search AMapReGoecodeSearch:regeo];
+}
+
 /* 根据中心点坐标来搜周边的POI. */
 //- (void)searchPoiWithCenterCoordinate:(CLLocationCoordinate2D )coord
 //{
@@ -236,20 +248,7 @@
 //    [self.search AMapPOIAroundSearch:request];
 //}
 
-/* 根据中心点坐标来请求逆地理编码 */
-- (void)searchReGeocodeWithCoordinate:(CLLocationCoordinate2D)coordinate
-{
-    AMapReGeocodeSearchRequest *regeo = [[AMapReGeocodeSearchRequest alloc] init];
-    
-    regeo.location = [AMapGeoPoint locationWithLatitude:coordinate.latitude longitude:coordinate.longitude];
-    regeo.requireExtension = YES;
-    
-    [self.search AMapReGoecodeSearch:regeo];
-}
-
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
-    
-    
 //    if (self.animationLayer) {
 //        [self.animationLayer removeFromSuperlayer];
 //    }
@@ -260,14 +259,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

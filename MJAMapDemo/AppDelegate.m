@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import <AMapFoundationKit/AMapFoundationKit.h>
-#import "MJDiDiViewController.h"
 //--高德地图
 #define AMapAppKey @"dd56a9edac69522b551e536e7a84c12a"
 
@@ -28,7 +27,7 @@
     /// 高德定位
     [AMapServices sharedServices].apiKey = AMapAppKey ;
     
-    MJDiDiViewController * VC =[[MJDiDiViewController alloc]init];
+    ViewController * VC =[[ViewController alloc]init];
     UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:VC];
     self.window.rootViewController = nav;
     

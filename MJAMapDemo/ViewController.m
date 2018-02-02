@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MJMapHeader.h"
 #import "MJMapViewController.h"
+#import "MJDiDiViewController.h"
 
 @interface ViewController ()
 @property (nonatomic,strong) UILabel * textLabel;
@@ -18,6 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIButton * DiDiBtn =[[UIButton alloc]initWithFrame:CGRectMake((SCREEN_WIDTH-100)/2, 200, 100, 50)];
+    [DiDiBtn setTitle:@"滴滴定位" forState:UIControlStateNormal];
+    [DiDiBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    [DiDiBtn  addTarget:self action:@selector(DiDiAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:DiDiBtn];
+    
     
     UIButton * locationBtn =[[UIButton alloc]initWithFrame:CGRectMake((SCREEN_WIDTH-100)/2, 260, 100, 50)];
     [locationBtn setTitle:@"获取定位" forState:UIControlStateNormal];
@@ -33,6 +40,10 @@
     textLabel.textColor = [UIColor darkGrayColor];
     self.textLabel = textLabel;
     [self.view addSubview:textLabel];
+}
+-(void)DiDiAction{
+    MJDiDiViewController * VC =[[MJDiDiViewController alloc]init];
+    [self.navigationController pushViewController:VC animated:YES];
 }
 -(void)locationAction{
     
